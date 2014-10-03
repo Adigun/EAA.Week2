@@ -1,0 +1,13 @@
+#!/bin/bash
+# Title : 
+# Date : 03/10/2014
+# Author : Toheeb Adigun
+# Version :
+# Description : 
+# Options : 
+
+
+echo "Number of Processor:" 
+
+cat /proc/cpuinfo | grep processor | wc -l
+
