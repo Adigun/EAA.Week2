@@ -1,7 +1,17 @@
 #!/bin/bash
 
-#: Description: print Hello and the first command-line argument 
-echo "Username : $1"
+
+if [ "$1" == "cache" ]; then
+
+  echo "cache"
+
+elif [ "$1" == "speed" ]; then
+
+	echo "speed"
+
+else
+
+  echo "You have type incorrect information"
+fi
 
 
-printf "Hello $1 "
