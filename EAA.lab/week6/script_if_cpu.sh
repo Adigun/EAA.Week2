@@ -1,14 +1,9 @@
 #!/bin/bash
 
+proccnt=$( ps -ef | wc -l )
 
-
-if [ "$1" == "2" ]; then
-
-echo "Number of Processor:" 
-cat /proc/cpuinfo | grep processor | wc -l
-
-else
-    echo "You have type incorrect Processor Number" >>logfilel
+if [ "$proccnt" -ge $1 ]; then
+    echo "Alert, system under excess load! " >> logfilel
 fi
   
 
