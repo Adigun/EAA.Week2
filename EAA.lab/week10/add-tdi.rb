@@ -1,7 +1,7 @@
-User 'tdi' do
+user 'EAA' do
 
 	action :create
-	home "/home/tdi"
+	home "/home/EAA"
 	shell "/bin/bash"
 	supports :manage_home => home
 
